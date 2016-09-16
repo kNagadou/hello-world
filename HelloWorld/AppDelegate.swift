@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import Log
+
+let log: Logger? = {
+    #if DEBUG
+        let Log = Logger(formatter: .Detailed, theme: nil)
+        return Log
+    #else
+        return nil
+    #endif
+}()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

@@ -9,28 +9,28 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var rightButton: UIButton!
     @IBOutlet weak var leftButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.rightButton.titleLabel?.text = "Reset"
-        self.leftButton.titleLabel?.text = "Green"
-        // Do any additional setup after loading the view, typically from a nib.
+        self.rightButton.setTitle("Reset", for: UIControlState.normal)
+        self.leftButton.setTitle("Green", for: UIControlState.normal)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     @IBAction func onRightButton(_ sender: UIButton) {
         self.view.backgroundColor = UIColor.white
+        log?.debug(sender.titleLabel!.text!)
     }
 
     @IBAction func onLeftButton(_ sender: UIButton) {
         self.view.backgroundColor = UIColor.green
+        log?.debug(sender.titleLabel!.text!)
     }
 }
 
