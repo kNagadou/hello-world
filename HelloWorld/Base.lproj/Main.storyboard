@@ -41,14 +41,26 @@
                                     <action selector="onLeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pux-xx-ujm"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="s7i-Xw-4RP">
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="6tV-HY-aqP"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="i6w-d6-KrY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="36v-F9-H5C"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s7i-Xw-4RP" secondAttribute="bottom" constant="189" id="6Vx-op-cGz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="s7i-Xw-4RP" secondAttribute="trailing" id="77l-Yo-RM9"/>
                             <constraint firstItem="k7t-Oo-XDQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="Hai-lU-iqt"/>
                             <constraint firstItem="sEd-6f-cbf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Rs2-iM-9LA"/>
                             <constraint firstItem="i6w-d6-KrY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="U0I-Az-YS5"/>
                             <constraint firstItem="sEd-6f-cbf" firstAttribute="centerY" secondItem="i6w-d6-KrY" secondAttribute="centerY" id="Yme-FB-eMu"/>
+                            <constraint firstItem="s7i-Xw-4RP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZKf-MV-jKF"/>
                             <constraint firstItem="sEd-6f-cbf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cCE-6w-iou"/>
                             <constraint firstItem="k7t-Oo-XDQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cbl-aH-bPV"/>
                         </constraints>
@@ -56,6 +68,7 @@
                     <connections>
                         <outlet property="leftButton" destination="i6w-d6-KrY" id="gdc-qD-1J9"/>
                         <outlet property="rightButton" destination="sEd-6f-cbf" id="AcP-eQ-IZ4"/>
+                        <outlet property="segmentedControl" destination="s7i-Xw-4RP" id="OuK-xd-HBA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
