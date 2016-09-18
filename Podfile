@@ -6,6 +6,7 @@ target 'HelloWorld' do
   use_frameworks!
 
   pod 'Log'
+  pod 'DZNEmptyDataSet'
 
   # Pods for HelloWorld
 
