@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var rightButton: UIButton!
     @IBOutlet weak var leftButton: UIButton!
+    @IBOutlet weak var showImageViewButton: UIButton!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     let colors: Dictionary<String, UIColor> = ["White": UIColor.white, "Green": UIColor.green]
     
@@ -25,9 +26,15 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    func showImageView() {
+        let imageView: KNImageView! = KNImageView.newImageView(parentView: self.view)
+        self.view.addSubview(imageView)
+    }
+    
     func setTitleOfButton() {
         self.rightButton.setTitle("White", for: UIControlState.normal)
         self.leftButton.setTitle("Green", for: UIControlState.normal)
+        self.showImageViewButton.setTitle("Show Image View", for: UIControlState.normal)
     }
     
     func setTitleOfSegments() {
@@ -45,6 +52,10 @@ class ViewController: UIViewController {
         log?.debug(segmentTitle!)
     }
 
+    @IBAction func onShowImageViewButton(_ sender: UIButton) {
+        self.showImageView()
+    }
+    
     @IBAction func onRightButton(_ sender: UIButton) {
         self.view.backgroundColor = self.colors[sender.titleLabel!.text!]
         log?.debug(sender.titleLabel!.text!)

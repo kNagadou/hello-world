@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,29 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello, Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7t-Oo-XDQ">
-                                <frame key="frameInset" minX="16" minY="170" width="343" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7t-Oo-XDQ">
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEd-6f-cbf">
-                                <frame key="frameInset" minX="259" minY="336" width="100" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEd-6f-cbf">
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="onRightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S13-Ka-XpI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6w-d6-KrY">
-                                <frame key="frameInset" minX="16" minY="336" width="100" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6w-d6-KrY">
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="onLeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pux-xx-ujm"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="s7i-Xw-4RP">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="s7i-Xw-4RP">
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
@@ -50,25 +46,33 @@
                                     <action selector="changeValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="6tV-HY-aqP"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bL8-rw-8KX">
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onShowImageViewButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vv0-0x-t0F"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="i6w-d6-KrY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="36v-F9-H5C"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s7i-Xw-4RP" secondAttribute="bottom" constant="189" id="6Vx-op-cGz"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="s7i-Xw-4RP" secondAttribute="trailing" id="77l-Yo-RM9"/>
-                            <constraint firstItem="k7t-Oo-XDQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="Hai-lU-iqt"/>
-                            <constraint firstItem="sEd-6f-cbf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Rs2-iM-9LA"/>
-                            <constraint firstItem="i6w-d6-KrY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="U0I-Az-YS5"/>
-                            <constraint firstItem="sEd-6f-cbf" firstAttribute="centerY" secondItem="i6w-d6-KrY" secondAttribute="centerY" id="Yme-FB-eMu"/>
-                            <constraint firstItem="s7i-Xw-4RP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ZKf-MV-jKF"/>
-                            <constraint firstItem="sEd-6f-cbf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cCE-6w-iou"/>
-                            <constraint firstItem="k7t-Oo-XDQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cbl-aH-bPV"/>
+                            <constraint firstItem="bL8-rw-8KX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="AuU-Bl-cRe"/>
+                            <constraint firstItem="k7t-Oo-XDQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BI8-Ny-DBW"/>
+                            <constraint firstItem="s7i-Xw-4RP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hzf-Bz-ARz"/>
+                            <constraint firstItem="i6w-d6-KrY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="X2i-q3-Kfd"/>
+                            <constraint firstItem="s7i-Xw-4RP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="XQZ-4W-oUG"/>
+                            <constraint firstItem="bL8-rw-8KX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZM5-Ie-rHu"/>
+                            <constraint firstItem="k7t-Oo-XDQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="g5l-rT-wvp"/>
+                            <constraint firstItem="sEd-6f-cbf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="100" id="hK7-5l-bMK"/>
+                            <constraint firstItem="i6w-d6-KrY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-100" id="k5d-vd-Oic"/>
+                            <constraint firstItem="sEd-6f-cbf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nL1-fB-wFT"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="leftButton" destination="i6w-d6-KrY" id="gdc-qD-1J9"/>
                         <outlet property="rightButton" destination="sEd-6f-cbf" id="AcP-eQ-IZ4"/>
                         <outlet property="segmentedControl" destination="s7i-Xw-4RP" id="OuK-xd-HBA"/>
+                        <outlet property="showImageViewButton" destination="bL8-rw-8KX" id="JFg-WE-YPe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

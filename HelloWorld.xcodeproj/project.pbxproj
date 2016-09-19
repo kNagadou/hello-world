@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19152B5E1D8FBD2700BDCB09 /* KNImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19152B5D1D8FBD2700BDCB09 /* KNImageView.xib */; };
+		19152B601D8FC5AC00BDCB09 /* KNImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19152B5F1D8FC5AC00BDCB09 /* KNImageView.swift */; };
 		194EA7DF1D8BEAD9002CE316 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 194EA7DE1D8BEAD9002CE316 /* Podfile */; };
 		198225481D8ADD5600605FD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198225471D8ADD5600605FD9 /* AppDelegate.swift */; };
 		1982254A1D8ADD5600605FD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198225491D8ADD5600605FD9 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19152B5D1D8FBD2700BDCB09 /* KNImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KNImageView.xib; sourceTree = "<group>"; };
+		19152B5F1D8FC5AC00BDCB09 /* KNImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KNImageView.swift; sourceTree = "<group>"; };
 		194EA7DE1D8BEAD9002CE316 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		198225441D8ADD5600605FD9 /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		198225471D8ADD5600605FD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 			children = (
 				198225471D8ADD5600605FD9 /* AppDelegate.swift */,
 				198225491D8ADD5600605FD9 /* ViewController.swift */,
+				19152B5D1D8FBD2700BDCB09 /* KNImageView.xib */,
+				19152B5F1D8FC5AC00BDCB09 /* KNImageView.swift */,
 				1982254B1D8ADD5600605FD9 /* Main.storyboard */,
 				1982254E1D8ADD5600605FD9 /* Assets.xcassets */,
 				198225501D8ADD5600605FD9 /* LaunchScreen.storyboard */,
@@ -156,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				198225521D8ADD5600605FD9 /* LaunchScreen.storyboard in Resources */,
+				19152B5E1D8FBD2700BDCB09 /* KNImageView.xib in Resources */,
 				1982254F1D8ADD5600605FD9 /* Assets.xcassets in Resources */,
 				194EA7DF1D8BEAD9002CE316 /* Podfile in Resources */,
 				1982254D1D8ADD5600605FD9 /* Main.storyboard in Resources */,
@@ -218,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1982254A1D8ADD5600605FD9 /* ViewController.swift in Sources */,
+				19152B601D8FC5AC00BDCB09 /* KNImageView.swift in Sources */,
 				198225481D8ADD5600605FD9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
