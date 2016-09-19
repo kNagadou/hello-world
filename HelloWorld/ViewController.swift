@@ -28,6 +28,10 @@ class ViewController: UIViewController {
     
     func showImageView() {
         let imageView: KNImageView! = KNImageView.newImageView(parentView: self.view)
+        imageView.frame.origin.y = self.view.frame.height
+        UIView.animate(withDuration: 0.5, animations: {() -> Void in
+            imageView.frame.origin.y = 0
+        })
         self.view.addSubview(imageView)
     }
     

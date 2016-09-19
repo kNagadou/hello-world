@@ -28,8 +28,11 @@ class KNImageView: UIView {
         self.closeButton.setTitle("Close", for: UIControlState.normal)
     }
     
-    @IBAction func onImageButton(_ sender: UIButton) {
-        self.removeFromSuperview()
-    }
-    
+    @IBAction func onCloseButton(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.5, animations: {() -> Void in
+            self.frame.origin.y = self.frame.height
+            }, completion: {(Bool) -> Void in
+                self.removeFromSuperview()
+        })
+    }    
 }

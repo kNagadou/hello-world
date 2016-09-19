@@ -22,7 +22,7 @@
                     <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                     <state key="normal" title="Button"/>
                     <connections>
-                        <action selector="onImageButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="5km-al-tFV"/>
+                        <action selector="onCloseButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="FCR-Dx-D2d"/>
                     </connections>
                 </button>
             </subviews>
