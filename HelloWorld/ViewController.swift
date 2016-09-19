@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var rightButton: UIButton!
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var showImageViewButton: UIButton!
+    @IBOutlet weak var showEmptyViewButton: UIButton!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     let colors: Dictionary<String, UIColor> = ["White": UIColor.white, "Green": UIColor.green]
     
@@ -29,9 +30,9 @@ class ViewController: UIViewController {
     func showImageView() {
         let imageView: KNImageView! = KNImageView.newImageView(parentView: self.view)
         imageView.frame.origin.y = self.view.frame.height
-        UIView.animate(withDuration: 0.5, animations: {() -> Void in
+        UIView.animate(withDuration: 0.5){
             imageView.frame.origin.y = 0
-        })
+        }
         self.view.addSubview(imageView)
     }
     
@@ -39,6 +40,7 @@ class ViewController: UIViewController {
         self.rightButton.setTitle("White", for: UIControlState.normal)
         self.leftButton.setTitle("Green", for: UIControlState.normal)
         self.showImageViewButton.setTitle("Show Image View", for: UIControlState.normal)
+        self.showEmptyViewButton.setTitle("Show Empty View", for: UIControlState.normal)
     }
     
     func setTitleOfSegments() {
@@ -46,6 +48,11 @@ class ViewController: UIViewController {
         let colors: [String] = Array(self.colors.keys)
         for i in 0..<numOfSegments {
             self.segmentedControl.setTitle(colors[i], forSegmentAt: i)
+        }
+    }
+    @IBAction func onShowEmptyViewButton(_ sender: UIButton) {
+        self.present(EmptyViewController(), animated: true){
+            log?.debug()
         }
     }
     

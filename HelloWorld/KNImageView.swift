@@ -29,10 +29,10 @@ class KNImageView: UIView {
     }
     
     @IBAction func onCloseButton(_ sender: UIButton) {
-        UIView.animate(withDuration: 0.5, animations: {() -> Void in
+        UIView.animate(withDuration: 0.3, animations: {
             self.frame.origin.y = self.frame.height
-            }, completion: {(Bool) -> Void in
-                self.removeFromSuperview()
+            }, completion: {
+                if $0 { self.removeFromSuperview() }
         })
-    }    
+    }
 }

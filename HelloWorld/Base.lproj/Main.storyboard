@@ -53,6 +53,11 @@
                                     <action selector="onShowImageViewButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vv0-0x-t0F"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szh-D3-nt1">
+                                <connections>
+                                    <action selector="onShowEmptyViewButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7E2-Rr-pPu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -62,16 +67,19 @@
                             <constraint firstItem="i6w-d6-KrY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="X2i-q3-Kfd"/>
                             <constraint firstItem="s7i-Xw-4RP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="XQZ-4W-oUG"/>
                             <constraint firstItem="bL8-rw-8KX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZM5-Ie-rHu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Szh-D3-nt1" secondAttribute="bottom" constant="20" id="d3q-7d-3Hn"/>
                             <constraint firstItem="k7t-Oo-XDQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="g5l-rT-wvp"/>
                             <constraint firstItem="sEd-6f-cbf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="100" id="hK7-5l-bMK"/>
                             <constraint firstItem="i6w-d6-KrY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-100" id="k5d-vd-Oic"/>
                             <constraint firstItem="sEd-6f-cbf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nL1-fB-wFT"/>
+                            <constraint firstItem="Szh-D3-nt1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vrh-L2-6GE"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="leftButton" destination="i6w-d6-KrY" id="gdc-qD-1J9"/>
                         <outlet property="rightButton" destination="sEd-6f-cbf" id="AcP-eQ-IZ4"/>
                         <outlet property="segmentedControl" destination="s7i-Xw-4RP" id="OuK-xd-HBA"/>
+                        <outlet property="showEmptyViewButton" destination="Szh-D3-nt1" id="hZA-Tj-1h5"/>
                         <outlet property="showImageViewButton" destination="bL8-rw-8KX" id="JFg-WE-YPe"/>
                     </connections>
                 </viewController>

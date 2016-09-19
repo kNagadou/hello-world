@@ -20,7 +20,7 @@
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfW-ie-iMb">
                     <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
-                    <state key="normal" title="Button"/>
+                    <state key="normal" title="button"/>
                     <connections>
                         <action selector="onCloseButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="FCR-Dx-D2d"/>
                     </connections>
