@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1931E5CA1DA6A93400913AA4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1931E5C91DA6A93400913AA4 /* QuartzCore.framework */; };
+		1931E5CC1DA6A93C00913AA4 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1931E5CB1DA6A93C00913AA4 /* Metal.framework */; };
+		1931E5CE1DA6A94400913AA4 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1931E5CD1DA6A94400913AA4 /* MetalKit.framework */; };
+		1931E5D01DA6A94F00913AA4 /* MetalPerformanceShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1931E5CF1DA6A94F00913AA4 /* MetalPerformanceShaders.framework */; };
+		1931E5D21DA6AFAD00913AA4 /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1931E5D11DA6AFAD00913AA4 /* Shader.metal */; };
+		19B5247F1DA6A8E300F09D35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B5247E1DA6A8E300F09D35 /* AppDelegate.swift */; };
+		19B524811DA6A8E300F09D35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B524801DA6A8E300F09D35 /* ViewController.swift */; };
+		19B524841DA6A8E300F09D35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B524821DA6A8E300F09D35 /* Main.storyboard */; };
+		19B524861DA6A8E300F09D35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19B524851DA6A8E300F09D35 /* Assets.xcassets */; };
+		19B524891DA6A8E300F09D35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B524871DA6A8E300F09D35 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1931E5C91DA6A93400913AA4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1931E5CB1DA6A93C00913AA4 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		1931E5CD1DA6A94400913AA4 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		1931E5CF1DA6A94F00913AA4 /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = SDKROOT; };
+		1931E5D11DA6AFAD00913AA4 /* Shader.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
+		19B5247B1DA6A8E300F09D35 /* HellowMetal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HellowMetal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B5247E1DA6A8E300F09D35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19B524801DA6A8E300F09D35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19B524831DA6A8E300F09D35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19B524851DA6A8E300F09D35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19B524881DA6A8E300F09D35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19B5248A1DA6A8E300F09D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19B524781DA6A8E300F09D35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1931E5CA1DA6A93400913AA4 /* QuartzCore.framework in Frameworks */,
+				1931E5D01DA6A94F00913AA4 /* MetalPerformanceShaders.framework in Frameworks */,
+				1931E5CE1DA6A94400913AA4 /* MetalKit.framework in Frameworks */,
+				1931E5CC1DA6A93C00913AA4 /* Metal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1931E5C81DA6A93400913AA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1931E5CF1DA6A94F00913AA4 /* MetalPerformanceShaders.framework */,
+				1931E5CD1DA6A94400913AA4 /* MetalKit.framework */,
+				1931E5CB1DA6A93C00913AA4 /* Metal.framework */,
+				1931E5C91DA6A93400913AA4 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19B524721DA6A8E300F09D35 = {
+			isa = PBXGroup;
+			children = (
+				19B5247D1DA6A8E300F09D35 /* HellowMetal */,
+				19B5247C1DA6A8E300F09D35 /* Products */,
+				1931E5C81DA6A93400913AA4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		19B5247C1DA6A8E300F09D35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19B5247B1DA6A8E300F09D35 /* HellowMetal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19B5247D1DA6A8E300F09D35 /* HellowMetal */ = {
+			isa = PBXGroup;
+			children = (
+				19B5247E1DA6A8E300F09D35 /* AppDelegate.swift */,
+				19B524801DA6A8E300F09D35 /* ViewController.swift */,
+				1931E5D11DA6AFAD00913AA4 /* Shader.metal */,
+				19B524821DA6A8E300F09D35 /* Main.storyboard */,
+				19B524851DA6A8E300F09D35 /* Assets.xcassets */,
+				19B524871DA6A8E300F09D35 /* LaunchScreen.storyboard */,
+				19B5248A1DA6A8E300F09D35 /* Info.plist */,
+			);
+			path = HellowMetal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19B5247A1DA6A8E300F09D35 /* HellowMetal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19B5248D1DA6A8E300F09D35 /* Build configuration list for PBXNativeTarget "HellowMetal" */;
+			buildPhases = (
+				19B524771DA6A8E300F09D35 /* Sources */,
+				19B524781DA6A8E300F09D35 /* Frameworks */,
+				19B524791DA6A8E300F09D35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HellowMetal;
+			productName = HellowMetal;
+			productReference = 19B5247B1DA6A8E300F09D35 /* HellowMetal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19B524731DA6A8E300F09D35 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = kNagadou;
+				TargetAttributes = {
+					19B5247A1DA6A8E300F09D35 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = JY4BKM8DT7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 19B524761DA6A8E300F09D35 /* Build configuration list for PBXProject "HellowMetal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19B524721DA6A8E300F09D35;
+			productRefGroup = 19B5247C1DA6A8E300F09D35 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19B5247A1DA6A8E300F09D35 /* HellowMetal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19B524791DA6A8E300F09D35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B524891DA6A8E300F09D35 /* LaunchScreen.storyboard in Resources */,
+				19B524861DA6A8E300F09D35 /* Assets.xcassets in Resources */,
+				19B524841DA6A8E300F09D35 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19B524771DA6A8E300F09D35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1931E5D21DA6AFAD00913AA4 /* Shader.metal in Sources */,
+				19B524811DA6A8E300F09D35 /* ViewController.swift in Sources */,
+				19B5247F1DA6A8E300F09D35 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		19B524821DA6A8E300F09D35 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19B524831DA6A8E300F09D35 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19B524871DA6A8E300F09D35 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19B524881DA6A8E300F09D35 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19B5248B1DA6A8E300F09D35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19B5248C1DA6A8E300F09D35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19B5248E1DA6A8E300F09D35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JY4BKM8DT7;
+				INFOPLIST_FILE = HellowMetal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kzms33-4.HellowMetal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		19B5248F1DA6A8E300F09D35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JY4BKM8DT7;
+				INFOPLIST_FILE = HellowMetal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kzms33-4.HellowMetal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19B524761DA6A8E300F09D35 /* Build configuration list for PBXProject "HellowMetal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B5248B1DA6A8E300F09D35 /* Debug */,
+				19B5248C1DA6A8E300F09D35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19B5248D1DA6A8E300F09D35 /* Build configuration list for PBXNativeTarget "HellowMetal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19B5248E1DA6A8E300F09D35 /* Debug */,
+				19B5248F1DA6A8E300F09D35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19B524731DA6A8E300F09D35 /* Project object */;
+}
